@@ -192,5 +192,20 @@ if (poderInimigo <= 0) {
 
 console.log(" ");
 console.log("🏁 FIM DO CAPÍTULO - Aguarde o próximo nível da aventura!🏁");
+console.log(" ");
 
+// === CONTINUAÇÃO DA SAGA ÉPICA - NÍVEL 3 ===
+// Mantenha seu personagem dos níveis anteriores e adicione:
+
+
+// === NOVOS ELEMENTOS PARA O CASTELO DOS ARRAYS ===
+let inventario = ["Poção de agilidade", "Espada de cristal", "Armadura de aço"];
+let aliados = ["Mago selene", "Guerreiro zander", "Arqueira katniss"];
+let inimigosEncontrados = ["Gideon Sombrio", "Falkor", "Drake Haku"];
+let salasCastelo = ["Salão principal", "Sala do trono", "Torre de Menagem"];
+let tesouroColetado = [];
+
+console.log("🏰 === " + nomePersonagem + " ADENTRA O CASTELO DOS ARRAYS ===");
+console.log("Após as vitórias dos níveis anteriores, nossoa heroina chegou ao castelo lendário...");
+console.log("Inventário inicial: " + inventario.length + " itens mágicos");
 
