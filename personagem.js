@@ -98,5 +98,46 @@ console.log("determinada a seguir as pegadas do assassino que tirou tudo o que e
         console.log("Com a fúria certa, ela pode transformar dor em força.");
     }
 
-    console.log(`Ao atravessar a fronteira de Eldoria, ${nome} sente que não há mais volta. A vingança não espera.`);
-    console.log("");
+    console.log(" ");
+
+    // Capitulo 2
+    console.log("CAPÍTULO 2: A Encruzilhada do Destino");
+
+    console.log(`${nome} chega a um vilarejo abandonado na floresta esquecida.`);
+    console.log("Ali, encontra uma pequena loja ainda de pé, com um velho ferreiro à sua espera.");
+    console.log(`Você parece determinada, guerreira", diz ele, olhando para sua ${NOME_ARMA}.`);
+
+    // Compra de equipamentos 
+    if (ouro >= 50) {
+        console.log(`Com ${ouro} de ouro, ${nome} decide investir em melhorias para o combate.`);
+        console.log("Ela compra uma lâmina encantada e reforça sua armadura.");
+        forca += 150;
+        defesa += 90;
+        ouro -= 50;
+        console.log(`Força agora: ${forca}, Defesa: ${defesa}, Ouro restante: ${ouro}`);
+    } else {
+        console.log(`Com apenas ${ouro} de ouro, ${nome} não consegue pagar pelos upgrades.`);
+        console.log("Mas a falta de recursos não apaga sua determinação.");
+        console.log("Ela se concentra, treina sozinha durante a noite, e sua agilidade melhora.");
+        agilidade += 2;
+        console.log(`Agilidade aumentada para ${agilidade}`);
+    }
+
+    // Experiência acumulada — subir de nível
+    if (experiencia >= 100) {
+        console.log("A jornada até aqui ensinou muito a ela.");
+        console.log(`${nome} atinge um novo nível de sabedoria e poder!`);
+        nivel++;
+        experiencia = 0;
+        vidaAtual = vidaMaxima; // Vida restaurada
+        console.log(`Nível agora: ${nivel}, vida restaurada para ${vida}`);
+    } else {
+        console.log(`Apesar dos avanços, ${nome} ainda quer evoluir mais`);
+        console.log("Sabedoria atual: " + experiencia + "/100");
+
+    }
+
+    console.log(`Ao deixar o vilarejo, ${nome} nota pegadas recentes em direção à montanha...`);
+    console.log("Seria o rastro do assassino de seu pai? O sangue em suas veias começa a ferver outra vez.");
+    console.log(" ");
+
