@@ -141,3 +141,31 @@ console.log("determinada a seguir as pegadas do assassino que tirou tudo o que e
     console.log("Seria o rastro do assassino de seu pai? O sangue em suas veias começa a ferver outra vez.");
     console.log(" ");
 
+    // Capitulo 3
+    console.log("CAPÍTULO 3: A Batalha Decisiva");
+
+    let poderInimigo = 50;
+
+    // Sistema de combate 
+    if (vida <= 50) {
+        console.log("Com pouca vida, " + nome + " recorre ao desespero.");
+        console.log("Ela lembra do pai e se esforça, juntando toda a dor em um último golpe!");
+        poderInimigo -= (forca * 2);
+    } else if (manaAtual >= 30 && classe === "guerreira") {
+    console.log("" + nome + " canaliza todo seu poder!");
+    console.log("movimentos devastadores!");
+    poderInimigo -= (forca + 20);
+    manaAtual -= 30;
+    } else if (agilidade >= 15) {
+        console.log("Com movimentos rápidos, " + nome + " ataca p inimigo onde menos se espera.");
+        console.log("Seu treinamento com o pai lhe ensinou a nunca desperdiçar uma abertura.");
+        poderInimigo -= forca;
+    } else {
+        console.log("O combate se estende... " + nome + " assume uma postura defensiva, estudando o inimigo.");
+        console.log("Ela aproveita o momento para se recuperar um pouco.");
+        poderInimigo -= (forca / 2);
+        vida += 10;
+        console.log("Ela recupera parte de sua vida! Vida atual: " + vida);
+
+    }
+
