@@ -195,17 +195,95 @@ console.log("🏁 FIM DO CAPÍTULO - Aguarde o próximo nível da aventura!🏁"
 console.log(" ");
 
 // === CONTINUAÇÃO DA SAGA ÉPICA - NÍVEL 3 ===
-// Mantenha seu personagem dos níveis anteriores e adicione:
-
 
 // === NOVOS ELEMENTOS PARA O CASTELO DOS ARRAYS ===
 let inventario = ["Poção de agilidade", "Espada de cristal", "Armadura de aço"];
-let aliados = ["Mago selene", "Guerreiro zander", "Arqueira katniss"];
+let aliados = ["Maga selene", "Guerreiro zander", "Arqueira katniss"];
 let inimigosEncontrados = ["Gideon Sombrio", "Falkor", "Drake Haku"];
-let salasCastelo = ["Salão principal", "Sala do trono", "Torre de Menagem"];
+let salasCastelo = ["Salão principal", "Sala do trono", "Torre do fogo"];
 let tesouroColetado = [];
 
 console.log("🏰 === " + nomePersonagem + " ADENTRA O CASTELO DOS ARRAYS ===");
 console.log("Após as vitórias dos níveis anteriores, nossoa heroina chegou ao castelo lendário...");
 console.log("Inventário inicial: " + inventario.length + " itens mágicos");
+console.log(" ");
+
+
+// === CAPÍTULO 1: DESCOBERTA DAS COLEÇÕES ARCANAS ===
+console.log(" ");
+console.log("🗝️ CAPÍTULO 1: Baús Antigos e poderes esquecidos");
+
+//  Declaração e inicialização
+let pocoesEncontradas = [" Poção de Tempestade", "Poção de Vida", "Poção de Força"];
+let armadilhasAtiradas = []; 
+
+//  Acesso e modificação de elementos
+console.log("🧪 Primeira poção encontrada: " + pocoesEncontradas[0]);
+console.log("⚗️ Total de poções mágicas: " + pocoesEncontradas.length);
+
+// Modificando elemento específico
+inventario[0] = "Poção de Força suprema"; 
+console.log("✨ " + nomePersonagem + " melhorou uma poção!");
+
+// Métodos de array fundamentais
+inventario.push("Mochila de asas");
+console.log("🪂 Novo item adicionado! Inventário: " + inventario);
+
+let itemRemovido = inventario.pop(); 
+console.log(" Item removido: " + itemRemovido);
+console.log(" Inventário atual: " + inventario);
+console.log(" ");
+
+
+// === CAPÍTULO 2: O RITUAL DA EXPLORAÇÃO ===
+console.log("");
+console.log("⚔️ CAPÍTULO 2: Explorando as salas do castelo");
+
+// Explorando cada sala do castelo usando for tradicional
+console.log("🗺️ Começando exploração das " + salasCastelo.length + " salas místicas...");
+
+for (let i = 0; i < salasCastelo.length; i++) {
+console.log("🚪 Sala " + (i + 1) + ": " + salasCastelo[i]);
+
+// Lógica diferente para cada sala baseada no índice
+if (i === 0) {
+console.log("📚 " + nomePersonagem + " encontra pergaminhos antigos!");
+experiencia += 50;
+} else if (i === 1) {
+console.log("Itens com asas te permitem voar!");
+tesouroColetado.push("Mochila com asas");
+} else {
+console.log("🔥 O fogo pode te queimar e diminuir sua vida, cuidado!");
+vidaAtual -= 10; // Pequeno dano temporal
+}
+}
+
+console.log("📊 Exploração completa! XP: " + experiencia + " | Vida: " + vidaAtual);
+
+
+// === CAPÍTULO 3: A UNIÃO DOS ALIADOS ===
+console.log(" ");
+console.log("🤝 CAPÍTULO 3: Reunindo os Aliados Arcanos");
+
+// Recrutando aliados com for tradicional
+console.log("🏹 " + nomePersonagem + " convoca seus aliados para a batalha final:");
+
+for (let i = 0; i < aliados.length; i++) {
+let aliado = aliados[i];
+console.log("⚡ Aliado " + (i + 1) + ": " + aliado + " se junta à missão!");
+
+// Cada posição no array determina habilidade especial
+if (i === 0) { // Primeiro aliado 
+console.log("🔮 Como líder mágico, " + aliado + " multiplica o poder da equipe!");
+ouro += 50;
+} else if (i === 1) { // Segundo aliado
+console.log("🛡️ Como defensor principal, " + aliado + " fortalece a resistência!");
+vidaMaxima += 30;
+} else { // Demais aliados - Especialistas
+console.log("🏹 Como especialista, " + aliado + " aprimora táticas de combate!");
+experiencia += 40;
+}
+}
+
+console.log("🎖️ Equipe completa! Ouro: " + ouro + " | Vida máxima: " + vidaMaxima);
 
