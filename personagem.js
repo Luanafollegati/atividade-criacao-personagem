@@ -73,51 +73,30 @@ console.log(`Hoje eu tenho vida suficiente? ${vidaSuficiente}, tenho um ataque f
 console.log(`Então sim, hoje eu estou pronta para a minha vingança`);
 console.log(" ");
 
+//Capitulo 1
+console.log("CAPÍTULO 1: Sussurros da Floresta");
 
-// CAPÍTULO 1: Condicionais Simples na narrativa
-console.log(" CAPÍTULO 1: A vingança pode estar proxima");
+console.log(`Após enterrar seu pai com as próprias mãos, ${nome} jurou que o vingaria e que não teria medo do perigo.`);
+console.log(`Naquela manhã em Eldoria, ela partiu da vila com sua ${NOME_ARMA} presa às costas,`);
+console.log("determinada a seguir as pegadas do assassino que tirou tudo o que ela tinha.");
 
-// Verificação baseada no nível do personagem
-if (nivel >= 14) {
-    console.log("⚠️Você não pode participar da missâo, ainda não possui o nivel necessario!⚠️");
-    console.log("Mas " + nomePersonagem + " decide continuar mesmo assim, sabendo do seu potencial");
-}
+// Nível mínimo para seguir adiante
+    if (nivel <= 14) {
+    console.log(`${nome} ainda é jovem, mas não se intimida com a falta de experiência.`);
+    console.log("Mesmo sem o nível ideal, ela segue em frente. 'Meu coração sabe mais do que qualquer número', diz ela.");
+    }
 
-// Verificação de recursos especiais
-if (ouro >= 100) {
-    console.log("💰Seus bolsos estão com muito ouro! Cuidado para não ser roubada💰");
-}
+    // Se estiver com muito ouro
+    if (ouro >= 100) {
+        console.log(`Os bolsos de ${nome} pesam com tanto ouro que até os ladrões da floresta conseguem sentir seu cheiro.`);
+        console.log("Ela precisa manter-se alerta...");
+    }
 
-// Verificação de classe específica
-if (classe === "guerreira") {
-    console.log("✨Você tem muitas habilidades! Talvez consiga sua vingança com sucesso✨");
-}
+    // Reconhecimento de classe
+    if (classe === "guerreira") {
+        console.log(`Como uma guerreira, ${nome} possui habilidades de combate que podem virar qualquer batalha a seu favor.`);
+        console.log("Com a fúria certa, ela pode transformar dor em força.");
+    }
 
-
-// CAPÍTULO 2: Escolha Estratégica
-console.log("🛡️ CAPÍTULO 2: A Encruzilhada do Destino");
-
-// Escolha baseada em recursos
-if (ouro >= 50) {
-    console.log("💰 Com esse tanto de ouro, " + nomePersonagem + " decide compra equipamentos melhores!");
-    forca += 150;
-    defesa += 90;
-    ouro -= 50;
-    console.log("Força e defesa aumentaram! Ouro restante: " + ouro);
-} else {
-    console.log("💔 Sem ouro suficiente, " + nomePersonagem + " deve confiar apenas em suas habilidades!");
-    console.log("A adversidade fortalece o espírito! Agilidade +2");
-    agilidade += 2;
-}
-
-// Sistema de recompensas narrativo
-if (experiencia >= 100) {
-    console.log("🎉 A sabedoria acumulada se manifesta! " + nomePersonagem + " sente-se mais poderoso!");
-    nivel++;
-    experiencia = 0;
-    vidaAtual = vidaMaxima; // Vida restaurada
-} else {
-    console.log("📊 " + nomePersonagem + " ainda busca mais conhecimento e experiência...");
-    console.log("Sabedoria atual: " + experiencia + "/100");
-}
-
+    console.log(`Ao atravessar a fronteira de Eldoria, ${nome} sente que não há mais volta. A vingança não espera.`);
+    console.log("");
