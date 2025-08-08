@@ -56,18 +56,8 @@ let combatesVencidos = 4;
 let localAtual = "eldoria";
 let missaoAtual = "me vingar dos que magoaram meu pai";
 
-// prologo 
-console.log("PRÓLOGO");
-console.log(" ");
-
-console.log("Após os eventos do " + localAtual + ", nossa heroína " + nome);
-console.log("da classe " + classe + " se depara com um novo desafio: a verdade por trás da morte de seu pai.");
-console.log("Uma figura encapuzada revela: 'Ele foi traído por alguém próximo... alguém de Eldoria.'");
-console.log("");
-
-
 //6
-console.log(`Historia da guerreira ${nome}`);
+console.log(`Historia da guerreira ${nome}🌼`);
 console.log(`Olá! Eu sou a ${nome}, da classe ${classe}. Possuo o nivel ${nivel} com ${vida} pontos de vida, no meu inventario tenho ${ouro} de ouro e ${xp} de xp.`);
 console.log(`Possuo a arma ${NOME_ARMA} que se transformou a minha favorita depois da morte do meu pai.`);
 console.log(`O ${NOME_ARMA} era a que ele costumava utilizar para caçar, pois seu dano é de ${DANO_BASE}, conseguindo matar facilmente um animal grande.`);
@@ -77,9 +67,18 @@ console.log(`Meu pai morreu em uma de suas caças, mas tambem era um otimo guerr
 console.log(`Ele foi cedo, e deixou a minha mãe gravida da minha irmã mais nova. Ainda moramos no mesmo lugar, em eldoria, mas agora a casa parece vazia`);
 console.log(`Depois desse acontecido, que nos assombra ate hoje, decidi me vingar de todos que um dia o magoaram`);
 console.log(`Hoje eu tenho vida suficiente? ${vidaSuficiente}, tenho um ataque forte? ${ataqueForte}, um nivel avançado? ${nivelAvancado}, e posso enfrentar o guardião? ${podeEnfrentarGuardiao}`);
-console.log(`Então sim, hoje eu estou pronta para a minha vingança`);
+console.log(`Então sim, hoje eu estou pronta para a minha vingança🗡`);
+console.log(" ");
+ 
+// prologo 
+console.log("PRÓLOGO");
 console.log(" ");
 
+console.log("Após os eventos do " + localAtual + ", nossa heroína " + nome);
+console.log("da classe " + classe + " se depara com um novo desafio: a verdade por trás da morte de seu pai.");
+console.log("Uma figura encapuzada revela: 'Ele foi traído por alguém próximo... alguém de Eldoria.'");
+console.log("");
+  
 //Capitulo 1
 console.log("CAPÍTULO 1: Sussurros da Floresta");
 
@@ -89,13 +88,13 @@ console.log("determinada a seguir as pegadas do assassino que tirou tudo o que e
 
 // Nível mínimo para seguir adiante
     if (nivel <= 14) {
-    console.log(`${nome} ainda é jovem, mas não se intimida com a falta de experiência.`);
+    console.log(`😪 ${nome} ainda é jovem, mas não se intimida com a falta de experiência.`);
     console.log("Mesmo sem o nível ideal, ela segue em frente. 'Meu coração sabe mais do que qualquer número', diz ela.");
     }
 
     // Se estiver com muito ouro
     if (ouro >= 100) {
-        console.log(`Os bolsos de ${nome} pesam com tanto ouro que até os ladrões da floresta conseguem sentir seu cheiro.`);
+        console.log(`💰 Os bolsos de ${nome} pesam com tanto ouro que até os ladrões da floresta conseguem sentir seu cheiro.`);
         console.log("Ela precisa manter-se alerta...");
     }
 
@@ -120,7 +119,7 @@ console.log("determinada a seguir as pegadas do assassino que tirou tudo o que e
         forca += 150;
         defesa += 90;
         ouro -= 50;
-        console.log(`Força agora: ${forca}, Defesa: ${defesa}, Ouro restante: ${ouro}`);
+        console.log(`Força agora: ${forca}🔫, Defesa: ${defesa}🛡, Ouro restante: ${ouro}💲`);
     } else {
         console.log(`Com apenas ${ouro} de ouro, ${nome} não consegue pagar pelos upgrades.`);
         console.log("Mas a falta de recursos não apaga sua determinação.");
@@ -139,7 +138,7 @@ console.log("determinada a seguir as pegadas do assassino que tirou tudo o que e
         console.log(`Nível agora: ${nivel}, vida restaurada para ${vida}`);
     } else {
         console.log(`Apesar dos avanços, ${nome} ainda quer evoluir mais`);
-        console.log("Sabedoria atual: " + experiencia + "/100");
+        console.log("🥇Sabedoria atual: " + experiencia + "/100");
 
     }
 
@@ -159,7 +158,7 @@ console.log("determinada a seguir as pegadas do assassino que tirou tudo o que e
         poderInimigo -= (forca * 2);
     } else if (manaAtual >= 30 && classe === "guerreira") {
     console.log("" + nome + " canaliza todo seu poder!");
-    console.log("Movimentos devastadores!");
+    console.log("Movimentos devastadores!✨");
     poderInimigo -= (forca + 20);
     manaAtual -= 30;
     } else if (agilidade >= 15) {
@@ -174,12 +173,9 @@ console.log("determinada a seguir as pegadas do assassino que tirou tudo o que e
         console.log("Ela recupera parte de sua vida! Vida atual: " + vida);
 
     }
-
-    // continuação da jornada
-console.log(" === CONTINUAÇÃO DA JORNADA DE " + nome + " ===");
 console.log(" ");
 
-
+ // continuação da jornada
 console.log("EPILOGO");
 
 // Resultado final da batalha
@@ -194,7 +190,7 @@ if (poderInimigo <= 0) {
     console.log(nome + " jura: 'Da próxima vez, não terá onde se esconder.'");
 }
 
-console.log("");
+console.log(" ");
 console.log("🏁 FIM DO CAPÍTULO - Aguarde o próximo nível da aventura!");
 
 
