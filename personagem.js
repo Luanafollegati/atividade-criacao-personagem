@@ -56,7 +56,14 @@ let combatesVencidos = 4;
 let localAtual = "eldoria";
 let missaoAtual = "me vingar dos que magoaram meu pai";
 
+// prologo 
+console.log("PRÓLOGO");
+console.log(" ");
 
+console.log("Após os eventos do " + localAtual + ", nossa heroína " + nome);
+console.log("da classe " + classe + " se depara com um novo desafio: a verdade por trás da morte de seu pai.");
+console.log("Uma figura encapuzada revela: 'Ele foi traído por alguém próximo... alguém de Eldoria.'");
+console.log("");
 
 
 //6
@@ -97,7 +104,6 @@ console.log("determinada a seguir as pegadas do assassino que tirou tudo o que e
         console.log(`Como uma guerreira, ${nome} possui habilidades de combate que podem virar qualquer batalha a seu favor.`);
         console.log("Com a fúria certa, ela pode transformar dor em força.");
     }
-
     console.log(" ");
 
     // Capitulo 2
@@ -153,7 +159,7 @@ console.log("determinada a seguir as pegadas do assassino que tirou tudo o que e
         poderInimigo -= (forca * 2);
     } else if (manaAtual >= 30 && classe === "guerreira") {
     console.log("" + nome + " canaliza todo seu poder!");
-    console.log("movimentos devastadores!");
+    console.log("Movimentos devastadores!");
     poderInimigo -= (forca + 20);
     manaAtual -= 30;
     } else if (agilidade >= 15) {
@@ -168,4 +174,27 @@ console.log("determinada a seguir as pegadas do assassino que tirou tudo o que e
         console.log("Ela recupera parte de sua vida! Vida atual: " + vida);
 
     }
+
+    // continuação da jornada
+console.log(" === CONTINUAÇÃO DA JORNADA DE " + nome + " ===");
+console.log(" ");
+
+
+console.log("EPILOGO");
+
+// Resultado final da batalha
+if (poderInimigo <= 0) {
+    console.log("VITÓRIA ÉPICA! " + nome + " derrota seu inimigo com honra e bravura!");
+    xp += 100;
+    combatesVencidos++;
+    console.log("A lenda de " + nome + " ecoa pelas vilas próximas.");
+    console.log("Mas a verdadeira guerra — contra os traidores de Eldoria — está apenas começando...");
+} else {
+    console.log("A batalha foi dura. O inimigo escapa, mas com cicatrizes que jamais serão esquecidas.");
+    console.log(nome + " jura: 'Da próxima vez, não terá onde se esconder.'");
+}
+
+console.log("");
+console.log("🏁 FIM DO CAPÍTULO - Aguarde o próximo nível da aventura!");
+
 
