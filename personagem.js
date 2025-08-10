@@ -198,92 +198,129 @@ console.log(" ");
 
 // === NOVOS ELEMENTOS PARA O CASTELO DOS ARRAYS ===
 let inventario = ["Poção de agilidade", "Espada de cristal", "Armadura de aço"];
-let aliados = ["Maga selene", "Guerreiro zander", "Arqueira katniss"];
+let aliados = ["Maga Selene", "Guerreiro Zander", "Arqueira Katniss"];
 let inimigosEncontrados = ["Gideon Sombrio", "Falkor", "Drake Haku"];
 let salasCastelo = ["Salão principal", "Sala do trono", "Torre do fogo"];
 let tesouroColetado = [];
 
-console.log("🏰 === " + nomePersonagem + " ADENTRA O CASTELO DOS ARRAYS ===");
-console.log("Após as vitórias dos níveis anteriores, nossoa heroina chegou ao castelo lendário...");
+console.log("🏰 === " + nomePersonagem + " ADENTRA O CASTELO ===");
+console.log(`Após descobrir pistas sobre o assassino de seu pai, ${nomePersonagem} chega ao lendário castelo de Eldoria.`);
+console.log("Ali, dizem que o traidor mantém seu esconderijo, guardado por criaturas antigas.");
 console.log("Inventário inicial: " + inventario.length + " itens mágicos");
 console.log(" ");
 
+// === CAPÍTULO 1: BAÚS ANTIGOS E SEGREDOS DO PASSADO ===
+console.log("🗝️ CAPÍTULO 1: Baús Antigos e segredos do passado");
 
-// === CAPÍTULO 1: DESCOBERTA DAS COLEÇÕES ARCANAS ===
-console.log(" ");
-console.log("🗝️ CAPÍTULO 1: Baús Antigos e poderes esquecidos");
+let pocoesEncontradas = ["Poção de Tempestade", "Poção de Vida", "Poção de Força"];
+let armadilhasAtivadas = [];
 
-//  Declaração e inicialização
-let pocoesEncontradas = [" Poção de Tempestade", "Poção de Vida", "Poção de Força"];
-let armadilhasAtiradas = []; 
-
-//  Acesso e modificação de elementos
 console.log("🧪 Primeira poção encontrada: " + pocoesEncontradas[0]);
 console.log("⚗️ Total de poções mágicas: " + pocoesEncontradas.length);
 
-// Modificando elemento específico
-inventario[0] = "Poção de Força suprema"; 
-console.log("✨ " + nomePersonagem + " melhorou uma poção!");
+inventario[0] = "Poção de Força Suprema";
+console.log(`✨ ${nomePersonagem} aprimorou sua poção principal, tornando-a capaz de derrubar um ogro com um único gole!`);
 
-// Métodos de array fundamentais
-inventario.push("Mochila de asas");
-console.log("🪂 Novo item adicionado! Inventário: " + inventario);
+inventario.push("Chave enferrujada do traidor");
+console.log("🔑 Novo item adicionado ao inventário: " + inventario);
 
-let itemRemovido = inventario.pop(); 
-console.log(" Item removido: " + itemRemovido);
-console.log(" Inventário atual: " + inventario);
+let itemRemovido = inventario.pop();
+console.log("⚠️ Item descartado para abrir espaço: " + itemRemovido);
+console.log("Inventário atual: " + inventario);
 console.log(" ");
 
-
-// === CAPÍTULO 2: O RITUAL DA EXPLORAÇÃO ===
-console.log("");
+// === CAPÍTULO 2: A EXPLORAÇÃO DO CASTELO ===
 console.log("⚔️ CAPÍTULO 2: Explorando as salas do castelo");
 
-// Explorando cada sala do castelo usando for tradicional
-console.log("🗺️ Começando exploração das " + salasCastelo.length + " salas místicas...");
+console.log("🗺️ " + nomePersonagem + " inicia a exploração das " + salasCastelo.length + " salas místicas...");
 
 for (let i = 0; i < salasCastelo.length; i++) {
-console.log("🚪 Sala " + (i + 1) + ": " + salasCastelo[i]);
+    console.log("🚪 Sala " + (i + 1) + ": " + salasCastelo[i]);
 
-// Lógica diferente para cada sala baseada no índice
-if (i === 0) {
-console.log("📚 " + nomePersonagem + " encontra pergaminhos antigos!");
-experiencia += 50;
-} else if (i === 1) {
-console.log("Itens com asas te permitem voar!");
-tesouroColetado.push("Mochila com asas");
-} else {
-console.log("🔥 O fogo pode te queimar e diminuir sua vida, cuidado!");
-vidaAtual -= 10; // Pequeno dano temporal
+    if (i === 0) {
+        console.log("📜 Entre colunas antigas, ela encontra pergaminhos com o nome do assassino de seu pai...");
+        experiencia += 50;
+    } else if (i === 1) {
+        console.log("💺 No trono vazio, há um mapa com a rota de fuga do traidor.");
+        tesouroColetado.push("Mapa do traidor");
+    } else {
+        console.log("🔥 A torre do fogo abriga uma criatura que protege a passagem secreta.");
+        vidaAtual -= 15;
+    }
 }
-}
-
-console.log("📊 Exploração completa! XP: " + experiencia + " | Vida: " + vidaAtual);
-
-
-// === CAPÍTULO 3: A UNIÃO DOS ALIADOS ===
+console.log(`📊 Exploração concluída! XP: ${experiencia} | Vida: ${vidaAtual}`);
 console.log(" ");
-console.log("🤝 CAPÍTULO 3: Reunindo os Aliados Arcanos");
 
-// Recrutando aliados com for tradicional
-console.log("🏹 " + nomePersonagem + " convoca seus aliados para a batalha final:");
+// === CAPÍTULO 3: REUNINDO OS ALIADOS PARA O ATAQUE FINAL ===
+console.log("🤝 CAPÍTULO 3: Preparando a ofensiva");
 
 for (let i = 0; i < aliados.length; i++) {
-let aliado = aliados[i];
-console.log("⚡ Aliado " + (i + 1) + ": " + aliado + " se junta à missão!");
+    let aliado = aliados[i];
+    console.log(`⚡ ${aliado} se junta à causa da vingança contra o traidor de Eldoria!`);
 
-// Cada posição no array determina habilidade especial
-if (i === 0) { // Primeiro aliado 
-console.log("🔮 Como líder mágico, " + aliado + " multiplica o poder da equipe!");
-ouro += 50;
-} else if (i === 1) { // Segundo aliado
-console.log("🛡️ Como defensor principal, " + aliado + " fortalece a resistência!");
-vidaMaxima += 30;
-} else { // Demais aliados - Especialistas
-console.log("🏹 Como especialista, " + aliado + " aprimora táticas de combate!");
-experiencia += 40;
+    if (i === 0) {
+        console.log("🔮 A Maga Selene conjura feitiços para multiplicar o poder de todos.");
+        ouro += 80;
+    } else if (i === 1) {
+        console.log("🛡️ Zander fortalece as defesas, protegendo Lyra de emboscadas.");
+        vidaMaxima += 40;
+    } else {
+        console.log("🏹 Katniss cria emboscadas estratégicas para cercar o inimigo.");
+        experiencia += 60;
+    }
 }
+console.log(`🎖️ Equipe pronta! Ouro: ${ouro} | Vida máxima: ${vidaMaxima}`);
+console.log(" ");
+
+// === CAPÍTULO 4: O ENCONTRO COM O TRAIDOR ===
+console.log("");
+console.log("🔥 CAPÍTULO 4: O Encontro com o Traidor");
+
+let inimigosBatalha = ["Traidor Real"];
+let danoRecebido = [];
+
+console.log("💀 " + nomePersonagem + " finalmente encontra seu inimigo mortal: " + inimigosBatalha[0] + "!");
+
+// Laço de batalha — mesmo com um só inimigo, usamos o formato padrão
+for (let i = 0; i < inimigosBatalha.length; i++) {
+    let inimigo = inimigosBatalha[i];
+    let dano;
+
+    // Sistema de combate baseado na condição da guerreira
+    if (vidaAtual > 50 && forca > 150) {
+        console.log("⚔️ " + nomePersonagem + " avança com fúria! Seus golpes ecoam pelo salão.");
+        dano = forca + 50;
+    } else if (manaAtual >= 30) {
+        console.log("✨ Usando energia vital, ela lança um ataque devastador!");
+        dano = Math.floor(forca * 1.5);
+        manaAtual -= 30;
+    } else {
+        console.log("💥 Mesmo ferida, ela não recua. Cada golpe é movido pela memória do pai.");
+        dano = forca;
+    }
+
+    console.log("💥 " + nomePersonagem + " causa " + dano + " de dano em " + inimigo + "!");
+    danoRecebido.push(dano);
+
+    // Resultado da batalha
+    let poderTraidor = 200 - dano;
+    if (poderTraidor <= 0) {
+        console.log("🏆 VITÓRIA! " + inimigo + " cai diante de sua lâmina.");
+        console.log(nomePersonagem + " finalmente vinga a morte de seu pai.");
+        combatesVencidos++;
+        xp += 200;
+    } else {
+        console.log("⚠️ " + inimigo + " escapa ferido, prometendo vingança...");
+    }
 }
 
-console.log("🎖️ Equipe completa! Ouro: " + ouro + " | Vida máxima: " + vidaMaxima);
+// Estatísticas finais
+let danoTotal = 0;
+for (let i = 0; i < danoRecebido.length; i++) {
+    danoTotal += danoRecebido[i];
+    console.log("📊 Golpe " + (i + 1) + " - Dano: " + danoRecebido[i]);
+}
+
+console.log("⚡ Dano total causado: " + danoTotal);
+console.log("🏁 FIM DO NÍVEL 3 — A história continua no próximo capítulo...");
 
