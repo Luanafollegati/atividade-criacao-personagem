@@ -322,5 +322,31 @@ for (let i = 0; i < danoRecebido.length; i++) {
 }
 
 console.log("⚡ Dano total causado: " + danoTotal);
-console.log("🏁 FIM DO NÍVEL 3 — A história continua no próximo capítulo...");
+console.log("🏁 FIM DO NÍVEL 3");
 
+// === EPÍLOGO ===
+console.log(" ");
+console.log("👑 === EPÍLOGO: " + nomePersonagem + " - HEROÍNA DE ELDORIA ===");
+
+console.log("Estatísticas Finais da Aventura:");
+console.log("• Nível alcançado: " + nivel);
+console.log("• Experiência total: " + experiencia);
+console.log("• Vida restante: " + vidaAtual + "/" + vidaMaxima);
+console.log("• Ouro acumulado: " + ouro);
+console.log("• Itens no inventário: " + inventario.length);
+console.log("• Aliados conquistados: " + aliados.length);
+console.log("• Tesouros épicos: " + tesouroColetado.length);
+
+console.log(" ");
+console.log("🌟 A LENDA CONTINUA...");
+console.log("Após enfrentar perigos mortais, reunir aliados leais e derrotar o traidor real, " + nomePersonagem + " finalmente vingou a morte de seu pai.");
+console.log("A sensação de justiça feita aqueceu seu coração, mas também deixou cicatrizes que jamais se apagarão.");
+console.log("Cada batalha, cada sala explorada e cada inimigo derrotado moldaram sua força e coragem.");
+console.log("O castelo de Eldoria agora estava livre das sombras, mas a paz nunca dura para sempre.");
+console.log("Seus aliados, embora vitoriosos, sabiam que novas ameaças surgiriam nas terras distantes.");
+console.log(`E ${nomePersonagem}, agora vista como uma lenda viva, sabia que não poderia ignorar um chamado para proteger seu povo.`);
+console.log("Com a lâmina afiada, o coração firme e a memória de seu pai como guia, ela partiu rumo ao desconhecido.");
+console.log("A vingança foi apenas o início — a verdadeira jornada de Lyra estava prestes a começar.");
+
+console.log(" ");
+console.log("🎯 FIM DO NÍVEL 3 | O DESTINO AGUARDA NOVAS AVENTURAS! 🎯");
