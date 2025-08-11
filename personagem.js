@@ -199,7 +199,7 @@ console.log(" ");
 // === NOVOS ELEMENTOS PARA O CASTELO DOS ARRAYS ===
 let inventario = ["Poção de agilidade", "Espada de cristal", "Armadura de aço"];
 let aliados = ["Maga Selene", "Guerreiro Zander", "Arqueira Katniss"];
-let inimigosEncontrados = ["Gideon Sombrio", "Falkor", "Drake Haku"];
+let inimigoEncontrados = ["traidor real"];
 let salasCastelo = ["Salão principal", "Sala do trono", "Torre do fogo"];
 let tesouroColetado = [];
 
@@ -281,7 +281,7 @@ let danoRecebido = [];
 
 console.log("💀 " + nomePersonagem + " finalmente encontra seu inimigo mortal: " + inimigosBatalha[0] + "!");
 
-// Laço de batalha — mesmo com um só inimigo, usamos o formato padrão
+// Laço de batalha 
 for (let i = 0; i < inimigosBatalha.length; i++) {
     let inimigo = inimigosBatalha[i];
     let dano;
@@ -344,7 +344,7 @@ console.log("A sensação de justiça feita aqueceu seu coração, mas também d
 console.log("Cada batalha, cada sala explorada e cada inimigo derrotado moldaram sua força e coragem.");
 console.log("O castelo de Eldoria agora estava livre das sombras, mas a paz nunca dura para sempre.");
 console.log("Seus aliados, embora vitoriosos, sabiam que novas ameaças surgiriam nas terras distantes.");
-console.log(`E ${nomePersonagem}, agora vista como uma lenda viva, sabia que não poderia ignorar um chamado para proteger seu povo.`);
+console.log(`E ${nomePersonagem}, sabia que não poderia ignorar um chamado para proteger seu povo.`);
 console.log("Com a lâmina afiada, o coração firme e a memória de seu pai como guia, ela partiu rumo ao desconhecido.");
 console.log("A vingança foi apenas o início — a verdadeira jornada de Lyra estava prestes a começar.");
 
